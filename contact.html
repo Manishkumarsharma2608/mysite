@@ -23,13 +23,14 @@
       <form  action="contact-form-handler.php"
   method="POST">
         <div class="input-fields">
-          <input name="name" type="text" class="Name" required="Name field is mandatory" placeholder="Name" />
+          <input name="name" type="text" class="Name" required placeholder="Name" />
           <br />
-          <input name=" email" type="email" class="Email" placeholder="Email" />
+          <input name=" email" type="email" class="Email" required placeholder="Email" />
           <br />
           <input name="phone" type="text" class="Phone" placeholder="Phone" />
           <br />
           <textarea
+                    required
             name="message"
             class="Message"
             placeholder="Message"
