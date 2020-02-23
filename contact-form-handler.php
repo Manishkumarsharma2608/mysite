@@ -1,11 +1,11 @@
-<?php
+<? php
         $name =$_POST['name'];
         $visitor_email=$_POST['email'];
         $phone=$_POST['phone'];
         $message=$_POST['message'];
 
 
-        $email_from = $visitor_email;
+        $email_from = mkssharma08@gmail.com;
 
         $email_subject = 'New Form Submission';
 
