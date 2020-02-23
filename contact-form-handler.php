@@ -5,7 +5,7 @@
         $message=$_POST['message'];
 
 
-        $email_from = 'mysite';
+        $email_from = 'mkssharma08@gmail.com';
 
         $email_subject = 'New Form Submission';
 
@@ -20,5 +20,5 @@
         $headers = "Reply-To: $visitor_email \r\n";
         mail($to,$email_subject,$email_body,$headers);
         header("Location: contact.html");       
-
+        echo "Hello world!;
 ?>
