@@ -108,9 +108,10 @@ span {
   background-color: #66bfbf;
   padding: 50px 10px 20px;
 }
-.contact-message p {
+p.contact-message{
   margin: 40px auto 60px;
   width: 40%;
+  font-size: 2em;
   font-family: "Sacramento", cursive;
 }
 .footer-images {
