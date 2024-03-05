@@ -111,6 +111,7 @@ span {
 .contact-message {
   margin: 40px auto 60px;
   width: 40%;
+  font-family: "Sacramento", cursive;
 }
 .footer-images {
   border-radius: 100%;
