@@ -1,5 +1,5 @@
 body {
-  color: #40514e;
+  color: white;
   font-family: "Merriweather", serif;
   margin: 0;
   padding: 0;
@@ -72,6 +72,7 @@ span {
 }
 
 .middle-container {
+background-color: #1e0027;
   margin: 100px 0;
 }
 .intro {
@@ -105,7 +106,7 @@ span {
 }
 
 .bottom-container {
-  background-color: #66bfbf;
+ background-color: #1e0027;
   padding: 50px 10px 20px;
 }
 p.contact-message{
