@@ -335,9 +335,8 @@ span {
 
   .copyright {
     color: black;
-    font-size: 0.7rem;
+    font-size: 1rem;
     font-weight: bolder;
-
     padding: 20px 0;
   }
   .btn {
