@@ -110,7 +110,7 @@ background-color: #1e0027;
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 500px;
+  max-width: 100%;
   position: relative;
   margin: auto;
 }
