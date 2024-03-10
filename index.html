@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Manish Kumar Sharma♌</title>
     <link rel="stylesheet" href="CSS/styles.css" />
-   <script type="text/javascript"  src="Script.js"></script>
     <link
       rel="shortcut icon"
       href="images/MKS.ico"
@@ -60,7 +59,7 @@ l        leverage industry experience and skill set, driving impactful contribut
 
 <!----------------------------- Slideshow container------------------- -->
 <div class="slideshow-container">
-
+ <h2>Technologies Employed</h2>
   <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
     <div class="numbertext">1 / 10</div>
@@ -131,56 +130,7 @@ l        leverage industry experience and skill set, driving impactful contribut
 </div>
 
 <hr/>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
+   
       <div class="contact-me">
         <h2>Are looking for a QA!</h2>
         <h3>Get In Touch</h3>
@@ -197,5 +147,27 @@ l        leverage industry experience and skill set, driving impactful contribut
       <a class="footer-link" href="https://www.facebook.com/profile.php?id=100003128372063" target="_blank"><img class="footer-images" src="images/facebook.png" alt="Facebook-image"></a>
       <p class="copyright">© <script>document.write(new Date().getFullYear())</script> Manish Kumar Sharma.</p>
     </div>
+       <script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
   </body>
 </html>
