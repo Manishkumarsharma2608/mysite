@@ -107,6 +107,9 @@ background-color: #1e0027;
 }
 /***********************Carousel Start**************************/
 .mySlides {display: none;}
+.mySlides img{
+  height:300px;
+}
 /* Slideshow container */
 .slideshow-container {
   max-width: 500px;
