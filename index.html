@@ -127,60 +127,45 @@
     </div>
   </div>
 </div>
-      <br>
+<hr/>
 
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span>
-  <span class="dot" onclick="currentSlide(5)"></span>
-  <span class="dot" onclick="currentSlide(6)"></span>
-  <span class="dot" onclick="currentSlide(7)"></span>
-  <span class="dot" onclick="currentSlide(8)"></span>
-  <span class="dot" onclick="currentSlide(9)"></span>
-  <span class="dot" onclick="currentSlide(10)"></span>
+      <div class="experience">
+  <h2>Experience</h2>
+
+  <div class="job">
+    <h3>Senior Software Test Engineer, Accenture</h3>
+    <p class="job-dates">2021 – Present</p>
+    <ul>
+      <li>Testing for a US-based banking client in an Agile/Scrum environment.</li>
+      <!-- Add a measurable result here, e.g. regression time reduced by X% -->
+    </ul>
+  </div>
+
+  <div class="job">
+    <h3>Software Test Engineer, TCS</h3>
+    <p class="job-dates">2018 – 2021</p>
+    <ul>
+      <li>Tested insurance applications for a UK government client using the Waterfall model.</li>
+      <li>Moved into automation by self-learning Java and Selenium and working with the automation team for 6 months.</li>
+    </ul>
+  </div>
 </div>
 
-<hr/>
+<hr />
    
       <div class="contact-me">
-        <h2>looking for a QA!</h2>
-        <h3>Get In Touch</h3>
-        
-        <a class="btn" href="contact.html" target="_blank" >CONTACT ME</a>
-        <a class="btn" href="Resume.html" target="_blank" >Download Resume</a>
-      </div>
-    </div>
+  <h2>Open to QA opportunities</h2>
+  <h3>Let’s Get in Touch</h3>
+  <a class="btn" href="contact.html">CONTACT ME</a>
+  <a class="btn" href="Resume.pdf" download>Download Resume</a>
+</div>
+</div>
 
-    <div class="bottom-container">
-      <a class="footer-link" href="https://www.linkedin.com/in/manish-kumar-sharma-01321b16a" target="_blank"><img class="footer-images" src="images/linkedin.png" alt="Linkedin-image"></a>
-  
-      
-      <p class="copyright">© <script>document.write(new Date().getFullYear())</script> Manish Kumar Sharma.</p>
-    </div>
-       <script>
-let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-</script>
-
+<div class="bottom-container">
+  <a class="footer-link" href="https://www.linkedin.com/in/manish-kumar-sharma-01321b16a" target="_blank" rel="noopener"><img class="footer-images" src="images/linkedin.png" alt="LinkedIn profile" /></a>
+  <a class="footer-link" href="https://github.com/manishkumarsharma2608" target="_blank" rel="noopener"><img class="footer-images" src="images/github.png" alt="GitHub profile" /></a>
+  <p class="copyright">© <script>document.write(new Date().getFullYear())</script> Manish Kumar Sharma.</p>
+</div>
+       
   </body>
 </html>
