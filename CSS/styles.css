@@ -124,6 +124,11 @@ a:focus-visible {
 }
 
 /* ---------- Skills ---------- */
+.skills {
+  background-color: #2b0a3a;
+  padding: 10px 20px;
+}
+
 .skill-row {
   margin: 60px auto;
   text-align: left;
@@ -202,6 +207,7 @@ a:focus-visible {
 
 /* ---------- Experience ---------- */
 .experience {
+  background-color: #2b0a3a;
   padding: 40px 20px;
   text-align: center;
 }
@@ -313,7 +319,6 @@ p.contact-message {
   font-size: 20px;
   font-weight: 900;
   line-height: 3;
-   margin:10px;
   text-transform: capitalize;
   width: 500px;
 }
@@ -355,7 +360,7 @@ p.contact-message {
   justify-content: center;
   letter-spacing: 2px;
   line-height: 1;
-  margin: 10px;
+  margin: 0;
   min-width: 220px;
   padding: 0 20px;
   text-align: center;
@@ -365,17 +370,12 @@ p.contact-message {
    Mobile (max-width: 400px)
    ========================================================== */
 @media only screen and (max-width: 400px) {
-  body {
-    background-color: black;
-  }
-
   h1 {
     font-size: 0.8em;
     margin: 0 auto;
   }
 
   h2 {
-    color: white;
     font-size: 1rem;
     font-weight: bolder;
   }
@@ -385,16 +385,12 @@ p.contact-message {
   }
 
   h3 {
-    color: white;
     font-size: 0.7rem;
     font-weight: bolder;
   }
 
   hr {
-    border: dotted white 6px;
-    border-bottom: none;
     margin: 40px auto;
-    width: 4%;
   }
 
   p {
@@ -404,10 +400,6 @@ p.contact-message {
   }
 
   /* Hero */
-  .top-container {
-    background-image: radial-gradient(black, white);
-  }
-
   .top-cloud,
   .bottom-cloud {
     height: 50px;
@@ -501,24 +493,12 @@ p.contact-message {
 
   /* Footer */
   .bottom-container {
-    background-image: linear-gradient(to right, black, white);
-    margin-top: 100px;
+    margin-top: 60px;
     padding: 30px 8px 15px;
   }
 
   .footer-images {
     height: 20px;
-  }
-
-  .copyright {
-    color: black;
-    font-weight: bolder;
-  }
-
-  .btn {
-    background-image: linear-gradient(to right, black, white);
-    color: black;
-    font-weight: bolder;
   }
 
   /* Contact page */
