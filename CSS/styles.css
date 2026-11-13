@@ -537,3 +537,29 @@ p.contact-message {
   padding: 20px 30px;
   text-align: left;
 }
+
+.form-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin: 25px 0 20px;
+}
+
+.form-buttons .btn {
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  letter-spacing: 2px;
+  line-height: normal;
+}
+
+.form-buttons #sbtbtn {
+  margin: 0;
+}
+
+@media only screen and (max-width: 400px) {
+  .form-buttons .btn {
+    font-size: 15px;
+  }
+}
