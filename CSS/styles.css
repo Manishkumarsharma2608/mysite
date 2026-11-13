@@ -323,6 +323,7 @@ p.contact-message {
 
 .Message {
   line-height: normal;
+  text-transform: none;
 }
 
 #sbtbtn {
