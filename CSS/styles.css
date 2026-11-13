@@ -489,3 +489,8 @@ p.contact-message{
 .tech-item span {
   font-size: 0.95rem;
 }
+
+.experience { padding: 40px 20px; text-align: center; }
+.job { margin: 25px auto; max-width: 700px; text-align: left; }
+.job-dates { font-style: italic; margin: 4px 0 10px; }
+.job ul { padding-left: 20px; }
