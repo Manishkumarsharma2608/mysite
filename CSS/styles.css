@@ -326,11 +326,38 @@ p.contact-message {
   text-transform: none;
 }
 
-#sbtbtn {
-  font-size: 20px;
+.top-nav {
+  padding: 20px 30px;
+  text-align: left;
+}
+
+.form-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin: 25px 0 20px;
+}
+
+/* SUBMIT and BACK TO HOME share exactly the same size */
+.form-buttons #sbtbtn,
+.form-buttons #homebtn {
+  align-items: center;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "Merriweather", serif;
+  font-size: 18px;
+  font-weight: bold;
+  height: 52px;
+  justify-content: center;
   letter-spacing: 2px;
-  margin-bottom: 20px;
-  margin-top: 25px;
+  line-height: 1;
+  margin: 0;
+  min-width: 220px;
+  padding: 0 20px;
+  text-align: center;
 }
 
 /* ==========================================================
@@ -532,34 +559,11 @@ p.contact-message {
   .Message {
     width: 90%;
   }
-}
-.top-nav {
-  padding: 20px 30px;
-  text-align: left;
-}
 
-.form-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  justify-content: center;
-  margin: 25px 0 20px;
-}
-
-.form-buttons .btn {
-  border: none;
-  cursor: pointer;
-  font-size: 20px;
-  letter-spacing: 2px;
-  line-height: normal;
-}
-
-.form-buttons #sbtbtn {
-  margin: 0;
-}
-
-@media only screen and (max-width: 400px) {
-  .form-buttons .btn {
-    font-size: 15px;
+  .form-buttons #sbtbtn,
+  .form-buttons #homebtn {
+    font-size: 14px;
+    height: 44px;
+    min-width: 150px;
   }
 }
