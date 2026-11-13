@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
   </head>
+  
   <body>
     <div class="contact-form-headers">
       <img
@@ -26,7 +27,7 @@
 
     <div class="contact-form">
       <!-- Replace YOUR_FORM_ID with the ID from your Formspree dashboard -->
-      <form action="https://formspree.io/f/mppdwkly" method="POST">
+      <form action="https://formspree.io/f/mppdwkly" method="POST" autocomplete="off">
         <div class="input-fields">
           <input
             name="name"
@@ -107,5 +108,11 @@
         Manish Kumar Sharma.
       </p>
     </div>
+    <script>
+  window.addEventListener("pageshow", function () {
+    var form = document.querySelector("form");
+    if (form) form.reset();
+  });
+</script>
   </body>
 </html>
