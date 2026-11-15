@@ -349,22 +349,17 @@ p.contact-message {
 /* SUBMIT and BACK TO HOME share exactly the same size */
 .form-buttons #sbtbtn,
 .form-buttons #homebtn {
-  align-items: center;
-  border: none;
-  box-sizing: border-box;
-  cursor: pointer;
-  display: inline-flex;
+   background-color: #11999e;
+  background-image: linear-gradient(90deg, #2610f3, #4556ec);
+  border-radius: 8px;
+  color: #ffffff;
+  display: inline-block;
   font-family: "Merriweather", serif;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
-  height: 52px;
-  justify-content: center;
-  letter-spacing: 2px;
-  line-height: 1;
-  margin: 12px;
-  min-width: 220px;
-  padding: 0 20px;
-  text-align: center;
+  margin: 15px;
+  padding: 10px 20px;
+  text-decoration: none;
 }
 
 /* ==========================================================
