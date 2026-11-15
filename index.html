@@ -169,6 +169,119 @@
 </p>
       </div>
 
+      <!-- Sample Work -->
+      <div class="samples" id="samples">
+        <h2>Sample Work</h2>
+        <p class="samples-note">
+          Illustrative examples written for this portfolio. They are not from
+          any client project and contain no real data.
+        </p>
+
+        <div class="sample-grid">
+          <!-- Test case -->
+          <div class="sample-card">
+            <span class="sample-tag">Test Case</span>
+            <h3>Transfer funds between own accounts</h3>
+            <dl>
+              <dt>ID</dt>
+              <dd>TC_XFER_001</dd>
+              <dt>Module</dt>
+              <dd>Fund Transfer</dd>
+              <dt>Type</dt>
+              <dd>Functional</dd>
+              <dt>Priority</dt>
+              <dd>High</dd>
+              <dt>Precondition</dt>
+              <dd>
+                User is logged in with two active accounts. The source account
+                balance is higher than the transfer amount.
+              </dd>
+            </dl>
+            <h4>Steps</h4>
+            <ol>
+              <li>Open Transfers and choose "Between my accounts".</li>
+              <li>Select the source and destination accounts.</li>
+              <li>Enter an amount below the available balance.</li>
+              <li>Review the details and confirm the transfer.</li>
+            </ol>
+            <h4>Expected result</h4>
+            <p>
+              A confirmation with a reference number appears. The source
+              balance decreases and the destination balance increases by the
+              same amount, and both transactions show in account history.
+            </p>
+          </div>
+
+          <!-- Bug report -->
+          <div class="sample-card">
+            <span class="sample-tag">Bug Report</span>
+            <h3>Dashboard balance not updated after a successful transfer</h3>
+            <dl>
+              <dt>ID</dt>
+              <dd>BUG-SAMPLE-014</dd>
+              <dt>Severity</dt>
+              <dd>High</dd>
+              <dt>Priority</dt>
+              <dd>High</dd>
+              <dt>Environment</dt>
+              <dd>QA, Chrome (latest), Windows 11</dd>
+            </dl>
+            <h4>Steps to reproduce</h4>
+            <ol>
+              <li>Log in and note the source account balance on the dashboard.</li>
+              <li>Transfer a valid amount to another own account.</li>
+              <li>Return to the dashboard without refreshing the page.</li>
+            </ol>
+            <h4>Actual result</h4>
+            <p>
+              The dashboard still shows the old balance. It corrects only after
+              a manual refresh.
+            </p>
+            <h4>Expected result</h4>
+            <p>The balance updates as soon as the transfer completes.</p>
+            <h4>Impact</h4>
+            <p>
+              Customers may think the transfer failed and submit it again,
+              risking duplicate transfers.
+            </p>
+          </div>
+
+          <!-- Accessibility check -->
+          <div class="sample-card">
+            <span class="sample-tag">Accessibility Check</span>
+            <h3>Transfer form errors are announced by the screen reader</h3>
+            <dl>
+              <dt>ID</dt>
+              <dd>TC_A11Y_007</dd>
+              <dt>Module</dt>
+              <dd>Fund Transfer form</dd>
+              <dt>Tool</dt>
+              <dd>JAWS with Chrome</dd>
+              <dt>WCAG</dt>
+              <dd>
+                3.3.1 Error Identification (A), 4.1.3 Status Messages (AA)
+              </dd>
+            </dl>
+            <h4>Steps</h4>
+            <ol>
+              <li>Use the Tab key to reach the amount field.</li>
+              <li>
+                Enter an amount above the available balance and submit the
+                form.
+              </li>
+              <li>Listen to what JAWS announces.</li>
+            </ol>
+            <h4>Expected result</h4>
+            <p>
+              The error is announced automatically, names the field, and says
+              how to fix it (for example, "Amount exceeds available balance").
+              Focus moves to the invalid field, and the error is not shown by
+              color alone.
+            </p>
+          </div>
+        </div>
+      </div>
+      
       <!-- Experience -->
             <!-- Experience -->
       <div class="experience">
