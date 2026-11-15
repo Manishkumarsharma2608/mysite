@@ -641,6 +641,71 @@ p.contact-message {
     font-size: 1rem;
   }
 
+   /* ---------- Navigation ---------- */
+html {
+  scroll-behavior: smooth;
+}
+
+[id] {
+  scroll-margin-top: 80px;
+}
+
+.site-nav {
+  background-color: rgba(30, 0, 39, 0.95);
+  border-bottom: 1px solid #2b0a3a;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 4px;
+  justify-content: center;
+  padding: 12px 10px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.site-nav a {
+  border-radius: 20px;
+  color: #66bfbf;
+  font-size: 0.9rem;
+  margin: 0;
+  padding: 6px 14px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  white-space: nowrap;
+}
+
+.site-nav a:hover {
+  background-color: #2b0a3a;
+  color: #ffffff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .site-nav a {
+    transition: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .site-nav {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .site-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .site-nav a {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  }
+}
+
   .sample-card p {
     margin: 0;
     width: auto;
