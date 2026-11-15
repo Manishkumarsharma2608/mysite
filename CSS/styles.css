@@ -1,6 +1,6 @@
 /* ==========================================================
    Manish Kumar Sharma - Portfolio
-   Cleaned stylesheet
+   Stylesheet
    ========================================================== */
 
 /* ---------- Base ---------- */
@@ -70,6 +70,75 @@ a:focus-visible {
 ::selection {
   color: white;
   background-color: darkorchid;
+}
+
+/* ---------- Navigation (home page) ---------- */
+:root {
+  --nav-h: 60px;
+}
+
+/* Added to <body> on the home page so the fixed menu doesn't cover the hero */
+.has-nav {
+  padding-top: var(--nav-h);
+}
+
+[id] {
+  scroll-margin-top: var(--nav-h);
+}
+
+.site-nav {
+  align-items: center;
+  background-color: rgba(30, 0, 39, 0.96);
+  border-bottom: 1px solid #2b0a3a;
+  box-sizing: border-box;
+  display: flex;
+  gap: 4px;
+  height: var(--nav-h);
+  justify-content: center;
+  left: 0;
+  padding: 0 10px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+}
+
+.site-nav a {
+  border-radius: 20px;
+  color: #66bfbf;
+  font-size: 0.9rem;
+  margin: 0;
+  padding: 6px 14px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  white-space: nowrap;
+}
+
+.site-nav a:hover {
+  background-color: #2b0a3a;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 700px) {
+  .site-nav {
+    justify-content: flex-start;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .site-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .site-nav a {
+    font-size: 0.85rem;
+    padding: 6px 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-nav a {
+    transition: none;
+  }
 }
 
 /* ---------- Hero ---------- */
@@ -204,7 +273,95 @@ a:focus-visible {
   font-size: 0.75rem;
 }
 
-/* ---------- Experience ---------- */
+.tech-more {
+  font-size: 0.9rem;
+  margin-top: 30px;
+}
+
+/* ---------- Sample Work ---------- */
+.samples {
+  padding: 40px 20px;
+}
+
+.samples-note {
+  font-size: 0.9rem;
+  font-style: italic;
+  margin: 0 auto 30px;
+  max-width: 700px;
+}
+
+.sample-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+.sample-card {
+  background-color: #2b0a3a;
+  border: 1px solid #11999e;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: left;
+}
+
+.sample-tag {
+  background-image: linear-gradient(90deg, #2610f3, #4556ec);
+  border-radius: 12px;
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  padding: 3px 12px;
+}
+
+.sample-card h3 {
+  font-size: 1.1rem;
+  margin: 14px 0;
+}
+
+.sample-card h4 {
+  color: #66bfbf;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  margin: 16px 0 6px;
+}
+
+.sample-card dl {
+  display: grid;
+  gap: 6px 12px;
+  grid-template-columns: 100px 1fr;
+  margin: 0;
+}
+
+.sample-card dt {
+  color: #66bfbf;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+}
+
+.sample-card dd {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.sample-card ol {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.sample-card li,
+.sample-card p {
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.sample-card p {
+  margin: 0;
+}
+
+/* ---------- Experience, Education & Awards ---------- */
 .experience {
   background-color: #2b0a3a;
   padding: 5px 20px;
@@ -318,7 +475,7 @@ p.contact-message {
   font-size: 20px;
   font-weight: 900;
   line-height: 3;
-   margin:10px;
+  margin: 10px;
   text-transform: capitalize;
   width: 500px;
 }
@@ -345,14 +502,13 @@ p.contact-message {
   margin: 25px 0 20px;
 }
 
-/* SUBMIT and BACK TO HOME share exactly the same size */
 .form-buttons #sbtbtn,
 .form-buttons #homebtn {
-   background-color: #11999e;
+  background-color: #11999e;
   background-image: linear-gradient(90deg, #2610f3, #4556ec);
   border-radius: 8px;
   color: #ffffff;
-  cursor:pointer;
+  cursor: pointer;
   display: inline-block;
   font-family: "Merriweather", serif;
   font-size: 15px;
@@ -361,6 +517,7 @@ p.contact-message {
   padding: 10px 20px;
   text-decoration: none;
 }
+
 .form-buttons #sbtbtn:hover,
 .form-buttons #homebtn:hover {
   background-color: #11cdd4;
@@ -369,6 +526,7 @@ p.contact-message {
 
 /* ==========================================================
    Mobile (max-width: 400px)
+   Keep this block last so it overrides the rules above
    ========================================================== */
 @media only screen and (max-width: 400px) {
   h1 {
@@ -474,6 +632,20 @@ p.contact-message {
     font-size: 0.65rem;
   }
 
+  /* Sample Work */
+  .sample-card {
+    padding: 18px;
+  }
+
+  .sample-card h3 {
+    font-size: 1rem;
+  }
+
+  .sample-card p {
+    margin: 0;
+    width: auto;
+  }
+
   /* Experience */
   .experience {
     padding: 20px 10px;
@@ -547,167 +719,5 @@ p.contact-message {
     font-size: 14px;
     height: 44px;
     min-width: 150px;
-  }
-}
-/* ---------- Sample Work ---------- */
-.samples {
-  padding: 40px 20px;
-}
-
-.samples-note {
-  font-size: 0.9rem;
-  font-style: italic;
-  margin: 0 auto 30px;
-  max-width: 700px;
-}
-
-.sample-grid {
-  display: grid;
-  gap: 24px;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
-  margin: 0 auto;
-  max-width: 1100px;
-}
-
-.sample-card {
-  background-color: #2b0a3a;
-  border: 1px solid #11999e;
-  border-radius: 12px;
-  padding: 24px;
-  text-align: left;
-}
-
-.sample-tag {
-  background-image: linear-gradient(90deg, #2610f3, #4556ec);
-  border-radius: 12px;
-  display: inline-block;
-  font-family: "Montserrat", sans-serif;
-  font-size: 0.75rem;
-  padding: 3px 12px;
-}
-
-.sample-card h3 {
-  font-size: 1.1rem;
-  margin: 14px 0;
-}
-
-.sample-card h4 {
-  color: #66bfbf;
-  font-family: "Montserrat", sans-serif;
-  font-size: 0.9rem;
-  margin: 16px 0 6px;
-}
-
-.sample-card dl {
-  display: grid;
-  gap: 6px 12px;
-  grid-template-columns: 100px 1fr;
-  margin: 0;
-}
-
-.sample-card dt {
-  color: #66bfbf;
-  font-family: "Montserrat", sans-serif;
-  font-size: 0.8rem;
-}
-
-.sample-card dd {
-  font-size: 0.9rem;
-  line-height: 1.6;
-  margin: 0;
-}
-
-.sample-card ol {
-  margin: 0;
-  padding-left: 20px;
-}
-
-.sample-card li,
-.sample-card p {
-  font-size: 0.9rem;
-  line-height: 1.8;
-}
-
-.sample-card p {
-  margin: 0;
-}
-
-@media only screen and (max-width: 400px) {
-  .sample-card {
-    padding: 18px;
-  }
-
-  .sample-card h3 {
-    font-size: 1rem;
-  }
-
-   /* ---------- Navigation ---------- */
-html {
-  scroll-behavior: smooth;
-}
-
-[id] {
-  scroll-margin-top: 80px;
-}
-
-.site-nav {
-  background-color: rgba(30, 0, 39, 0.95);
-  border-bottom: 1px solid #2b0a3a;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px 4px;
-  justify-content: center;
-  padding: 12px 10px;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-.site-nav a {
-  border-radius: 20px;
-  color: #66bfbf;
-  font-size: 0.9rem;
-  margin: 0;
-  padding: 6px 14px;
-  transition: background-color 0.2s ease, color 0.2s ease;
-  white-space: nowrap;
-}
-
-.site-nav a:hover {
-  background-color: #2b0a3a;
-  color: #ffffff;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-
-  .site-nav a {
-    transition: none;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .site-nav {
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    overflow-x: auto;
-    scrollbar-width: none;
-  }
-
-  .site-nav::-webkit-scrollbar {
-    display: none;
-  }
-
-  .site-nav a {
-    font-size: 0.8rem;
-    padding: 6px 10px;
-  }
-}
-
-  .sample-card p {
-    margin: 0;
-    width: auto;
   }
 }
