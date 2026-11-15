@@ -98,10 +98,9 @@ a:focus-visible {
 }
 
 .mountain {
-  border-bottom-right-radius: 0.5em;
-  border-bottom-left-radius: 0.5em;
   height: 250px;
-  width: 800px;
+  max-width: 100%;
+  width: 600px;
 }
 
 /* ---------- Main content wrapper ---------- */
