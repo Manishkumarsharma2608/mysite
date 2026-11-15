@@ -353,6 +353,7 @@ p.contact-message {
   background-image: linear-gradient(90deg, #2610f3, #4556ec);
   border-radius: 8px;
   color: #ffffff;
+  cursor:pointer;
   display: inline-block;
   font-family: "Merriweather", serif;
   font-size: 15px;
