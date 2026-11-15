@@ -361,6 +361,11 @@ p.contact-message {
   padding: 10px 20px;
   text-decoration: none;
 }
+.form-buttons #sbtbtn,
+.form-buttons #homebtn:hover {
+  background-color: #11cdd4;
+  background-image: linear-gradient(90deg, #11999e, #11cdd4);
+}
 
 /* ==========================================================
    Mobile (max-width: 400px)
