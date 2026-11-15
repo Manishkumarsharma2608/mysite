@@ -101,7 +101,7 @@ a:focus-visible {
   border-bottom-right-radius: 0.5em;
   border-bottom-left-radius: 0.5em;
   height: 250px;
-  width: 600px;
+  width: 800px;
 }
 
 /* ---------- Main content wrapper ---------- */
@@ -208,7 +208,7 @@ a:focus-visible {
 /* ---------- Experience ---------- */
 .experience {
   background-color: #2b0a3a;
-  padding: 40px 20px;
+  padding: 5px 20px;
   text-align: center;
 }
 
@@ -241,7 +241,7 @@ a:focus-visible {
   font-family: "Merriweather", serif;
   font-size: 15px;
   font-weight: bold;
-  margin: auto;
+  margin: 15px;
   padding: 10px 20px;
   text-decoration: none;
 }
